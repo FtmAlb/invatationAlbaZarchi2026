@@ -1,229 +1,186 @@
 <!DOCTYPE html>
-
 <html lang="fa" dir="rtl">
-
 <head>
-<link href="https://cdn.jsdelivr.net/gh/rastikerdar/peyda-font@v1.0.0/dist/font-face.css" rel="stylesheet">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>دعوت عروسی محمدحسین و فاطمه</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دعوت عروسی محمدحسین و فاطمه</title>
+    
+    <!-- فونت‌های رویایی -->
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
 </head>
-
-
 <body>
 
-<!-- Hero -->
-<header class="hero">
-
-<div class="hero-frame">
-
-    <img src="img/IMG_6452.png_87746.jpg" alt="">
-
-    <div class="overlay"></div>
-
-    <div class="hero-content">
-
-        <span class="hero-top-text"></span>
+    <!-- صفحه ورود (حلقه گل سمت چپ، بدون تاریخ و تالار) -->
+    <div id="welcome-screen" class="welcome-screen">
+        <div class="welcome-overlay"></div>
         
-        <div class="hero-names">
-        <h1 class="groom-name">
-        محمدحسین
-     </h1>
+        <div class="welcome-content">
+            <div class="wreath-container">
+                
+                <!-- کد SVG حلقه گل که برگ‌ها دور سمت چپ آن پیچیده‌اند -->
+                <svg class="floral-wreath-svg" viewBox="0 0 400 500" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+                    <ellipse cx="200" cy="250" rx="175" ry="235" fill="none" stroke="#c0a984" stroke-width="1.5" opacity="0.8"/>
+                    <path d="M 200 485 C -20 450, -20 50, 200 15" fill="none" stroke="#5a6b51" stroke-width="1.5" opacity="0.7"/>
+                    <path d="M 180 20 C 140 0, 110 40, 130 60 C 150 80, 190 50, 180 20 Z" fill="#5c7053" opacity="0.9"/>
+                    <path d="M 130 60 C 90 50, 70 100, 90 120 C 120 140, 150 90, 130 60 Z" fill="#7a8c71" opacity="0.85"/>
+                    <path d="M 160 30 C 180 0, 210 10, 200 30 C 190 50, 160 50, 160 30 Z" fill="#bfa36d" opacity="0.8"/>
+                    <path d="M 60 170 C 20 150, 10 210, 30 230 C 60 250, 90 190, 60 170 Z" fill="#4d6144" opacity="0.9"/>
+                    <path d="M 30 230 C -10 240, 10 300, 40 310 C 70 320, 70 250, 30 230 Z" fill="#697f5e" opacity="0.85"/>
+                    <path d="M 80 190 C 50 180, 40 220, 60 230 C 80 240, 100 210, 80 190 Z" fill="#bfa36d" opacity="0.8"/>
+                    <path d="M 20 270 C -5 280, 0 320, 25 330 C 50 340, 45 290, 20 270 Z" fill="#5c7053" opacity="0.8"/>
+                    <path d="M 70 350 C 40 380, 80 430, 110 410 C 140 390, 100 330, 70 350 Z" fill="#5c7053" opacity="0.9"/>
+                    <path d="M 110 410 C 100 450, 150 470, 170 450 C 190 430, 140 390, 110 410 Z" fill="#7a8c71" opacity="0.85"/>
+                    <path d="M 140 440 C 160 470, 200 460, 190 440 C 180 420, 150 420, 140 440 Z" fill="#bfa36d" opacity="0.8"/>
+                </svg>
 
-     <h1 class="bride-name">
-        فاطمه
-     </h1>
+                <!-- متن‌های داخل حلقه -->
+                <div class="ring-content">
+                    <h2 id="guest-name-display" class="guest-name">مهمان عزیز</h2>
+                    <p class="welcome-text">با افتخار شما را به جشن<br>پیوندمان دعوت می‌کنیم</p>
+                    
+                    <button id="open-envelope" class="enter-btn">
+                        ورود به کارت دعوت
+                    </button>
+                </div>
 
-      </div>
-
-    </div>
-
-</div>
-
-
-</header>
-
-<!-- Date Section -->
-
-<section class="date-section">
-
-</section>
-
-<!-- Message -->
-
-<section class="message">
-
-</section>
-
-<!-- Love Story -->
-
-<section class="love-story">
-
-
-<div class="story-text hidden">
-
-    <span class="flower">❦</span>
-
-    <h2>در پرتو مهر یزدان</h2>
-
-    <p>
-        گاه خداوند دو مسیر را
-        برای رسیدن به یک مقصد زیبا
-        به هم نزدیک می‌کند...
-
-    اکنون که دست در دست هم
-    فصل تازه‌ای از زندگی را آغاز می‌کنیم،
-    حضور گرم شما
-    زینت‌بخش جشن پیوندمان خواهد بود.
-    </p>
-
-</div>
-
-<div class="story-gallery">
-
-    <div class="photo-card card1 hidden">
-        <img src="img/IMG_6404_39902.jpg" alt="">
-    </div>
-
-    <div class="photo-card card2 hidden">
-        <img src="img/20260429_171458(1).jpg" alt="">
-    </div>
-
-</div>
-
-
-</section>
-
-<!-- Gallery -->
-
-<section class="gallery">
-
-<div class="polaroid">
-    <img src="img/photo1.jpg" alt="">
-</div>
-
-<div class="polaroid">
-    <img src="img/photo2.jpg" alt="">
-</div>
-
-<div class="polaroid">
-    <img src="img/photo3.jpg" alt="">
-</div>
-
-
-</section>
-
-<!-- RSVP -->
-
-<section class="rsvp">
-
-<!-- عکس پس زمینه RSVP -->
-<img src="img/20260429_171458(1).jpg" class="rsvp-bg" alt="">
-
-<div class="rsvp-overlay"></div>
-
-<div class="rsvp-content">
-
-    <h2>منتظر حضور گرم شما هستیم</h2>
-
-    <div class="event-box hidden">
-
-        <p>📅 ۱۸ خرداد ۱۴۰۵</p>
-
-        <p>🕖 ساعت ۱۹:۰۰ تا پاسی از شب</p>
-
-        <p>
-            📍 تالار یلدا
-            <br>
-            ابتدای جاده شاندیز
-            <br>
-            خیابان مدرس ۱
-        </p>
-
-    </div>
-
-</div>
-
-
-</section>
-
-
-<section class="countdown">
-
-    <h2>تا جشن ما</h2>
-
-    <div class="flip-clock">
-
-        <div class="flip-unit">
-            <div class="flip-number" id="days">00</div>
-            <span>روز</span>
+            </div>
         </div>
-
-        <div class="flip-unit">
-            <div class="flip-number" id="hours">00</div>
-            <span>ساعت</span>
-        </div>
-
-        <div class="flip-unit">
-            <div class="flip-number" id="minutes">00</div>
-            <span>دقیقه</span>
-        </div>
-
-        <div class="flip-unit">
-            <div class="flip-number" id="seconds">00</div>
-            <span>ثانیه</span>
-        </div>
-
     </div>
 
-</section>
+    <!-- بدنه اصلی سایت -->
+    <main id="main-content" class="main-content locked">
+        
+        <!-- Hero -->
+        <header class="hero">
+            <div class="hero-frame">
+                <img src="img/IMG_6452.png_87746.jpg" alt="عروس و داماد">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <div class="hero-names">
+                        <h1 class="groom-name cinematic-name">محمدحسین</h1>
+                        <span class="and-symbol cinematic-name">و</span>
+                        <h1 class="bride-name cinematic-name">فاطمه</h1>
+                    </div>
+                </div>
+            </div>
+        </header>
 
+        <!-- Love Story -->
+        <section class="love-story">
+            <div class="story-text hidden">
+                <span class="flower">❦</span>
+                <h2>در پرتو مهر یزدان</h2>
+                
+                <p class="dreamy-text" id="typewriter-text">
+                    انگار از اَزل نوشته بودند که در آن لحظه، در همان نقطه از جهان، مسیرمان یکی شود...
+                </p>
+            </div>
 
+            <div class="story-gallery">
+                <div class="photo-card card1 hidden">
+                    <img src="img/IMG_6404_39902.jpg" alt="">
+                </div>
+                <div class="photo-card card2 hidden">
+                    <img src="img/20260429_171458(1).jpg" alt="">
+                </div>
+            </div>
+        </section>
 
-<section class="location-section">
+        <!-- Gallery -->
+        <section class="gallery">
+            <div class="polaroid">
+                <img src="img/photo1.jpg" alt="">
+            </div>
+            <div class="polaroid">
+                <img src="img/photo2.jpg" alt="">
+            </div>
+            <div class="polaroid">
+                <img src="img/photo3.jpg" alt="">
+            </div>
+        </section>
 
-    <a
-        href="https://maps.google.com/?q=Yalda+Hall+Mashhad"
-        target="_blank"
-        class="location-btn">
+        <!-- RSVP -->
+        <section class="rsvp parallax-section">
+            <div class="rsvp-bg-overlay"></div>
+            <div class="rsvp-content">
+                <h2>منتظر حضور گرم شما هستیم</h2>
+                <div class="event-box hidden">
+                    <p>📅 ۱۸ خرداد ۱۴۰۵</p>
+                    <p>🕖 ساعت ۱۹:۰۰ تا پاسی از شب</p>
+                    <p>
+                        📍 تالار یلدا<br>
+                        ابتدای جاده شاندیز<br>
+                        خیابان مدرس ۱
+                    </p>
+                </div>
+            </div>
+        </section>
 
-         مسیریابی تالار 🚗
+        <!-- Countdown -->
+        <section class="countdown hidden">
+            <h2>تا جشن ما</h2>
+            <div class="flip-clock">
+                <div class="flip-unit"><div class="flip-number" id="days">00</div><span>روز</span></div>
+                <div class="flip-unit"><div class="flip-number" id="hours">00</div><span>ساعت</span></div>
+                <div class="flip-unit"><div class="flip-number" id="minutes">00</div><span>دقیقه</span></div>
+                <div class="flip-unit"><div class="flip-number" id="seconds">00</div><span>ثانیه</span></div>
+            </div>
+        </section>
 
-    </a>
+        <!-- Action Box & Form -->
+        <section class="action-section hidden">
+            <div class="action-card flex-container">
+                
+                <!-- ستون راست: اطلاعات و مسیریابی -->
+                <div class="action-column info-column">
+                    <h3 class="column-title">مسیریابی و یادآوری</h3>
+                    <p class="column-subtitle">برای دسترسی آسان، از گزینه‌های زیر استفاده کنید</p>
+                    
+                    <div class="btn-group">
+                        <a href="https://maps.google.com/?q=Yalda+Hall+Mashhad" target="_blank" class="location-btn">مسیریابی تالار 🚗</a>
+                        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=جشن+عروسی+محمدحسین+و+فاطمه&dates=20260608T153000Z/20260608T203000Z&details=منتظر+حضور+گرم+شما+هستیم!+❤️&location=تالار+یلدا,+ابتدای+جاده+شاندیز,+خیابان+مدرس+۱" target="_blank" class="calendar-btn">ثبت در تقویم 🗓️</a>
+                    </div>
+                </div>
 
-</section>
+               <div class="action-column form-column">
+                    <h3 class="column-title">یادگاری برای ما 💌</h3>
+                    <p class="column-subtitle">اگر دوست داشتید، یک پیام کوتاه برای ما بنویسید 🌸</p>
+    
+                    <div class="form-group">
+                        <input type="text" id="guestNameInput" class="form-input" placeholder="نام و نام خانوادگی شما">
+                    </div>
 
+                        <div class="form-group">
+                            <textarea id="messageInput" class="form-input" placeholder="یادگاری شما..." rows="4"></textarea>
+                        </div>
 
-<!-- Footer -->
+                            <div class="submit-group buttons-column">
+                                <button onclick="sendMessage()" class="submit-btn accept-btn">
+                                 ارسال متن 💌
+                                 </button>
+                            </div>
+                    </div>
 
-<footer>
+                </div>
+        </section>
 
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="footer-content hidden">
+                <span class="footer-flower">❦</span>
+                <p>به امید دیدارتان در این شب به یادماندنی</p>
+                <div class="footer-names">محمدحسین و فاطمه</div>
+            </div>
+        </footer>
 
-<h3>در صورتی که افتخار میزبانی از شما را نداریم، لطفا ما را مطلع سازید❤️</h3>
+    </main>
 
+    <audio id="bgMusic" loop playsinline>
+        <source src="music/لحظه شیرین.mp3" type="audio/mpeg">
+    </audio>
 
-</footer>
-
-<audio
-    id="bgMusic"
-    autoplay
-    loop
-    playsinline>
-
-    <source src="music/لحظه شیرین.mp3" type="audio/mpeg">
-
-</audio>
-
-<script src="script.js"></script>
-
-
+    <script src="script.js"></script>
 </body>
-
-
 </html>
